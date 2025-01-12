@@ -1,26 +1,73 @@
-# jd2-Homework-03
+# JD2-Homework-03
 
+## 1. Number Guessing Game with Leaderboard
 
+### Problem Description
 
-## 1.
+Create an application where the user is prompted to guess a randomly generated number between 1 and 100. Based on their guess, the application will provide feedback such as "Too low, try again" or "Too high, try again". If the user guesses the correct number, the application will show the number of attempts taken to guess correctly.
 
-- Kullanıcıya doğru tahminlerine veya yanlış tahminlerine göre farklı cevaplar veren bir uygulama yapın.
-- Uygulamayı, kullanıcının tahmin sayısını da takip ederek bir liderlik tablosu yapın.
+Additionally, keep track of the number of guesses each user takes and display a leaderboard showing the best results.
 
-Kullanıcıdan tahmin almadan önce 1-100 arasında rastgele olacak bir sayı üretilir, daha sonra kullanıcıdan 1-100 arasında bir tahmini alınır. Kullanıcı her tahmininde, programın cevabına göre "Too low, try again" veya "Too high, try again" mesajlarını görür. Kullanıcının doğru sayıyı tahmin etmesi durumunda, program doğru tahmin sayısını gösterir.
+### Requirements
 
-- Rastgele sayı üretmek için **Math.random()**  kullanımını araştırabilirsiniz. 
-- "if-else" yapısını kullanarak, kullanıcının girdiği sayıyı, rastgele seçilen sayıyla karşılaştırabilirsiniz. Doğru veya yanlış tahminlere göre, farklı bir mesaj veya cevap vermek için "if-else" bloklarını kullanabilirsiniz. 
-- Uygulamayı, kullanıcının tahmin sayısını da takip ederek bir liderlik tablosu yapmak için,  bir sayaç kullanarak doğru tahmin sayısını takip etmeniz gerekiyor. Tahmin sayısını saklayarak, kullanıcının ne kaç adımda  doğru tahmin yaptığını gösterebilirsiniz. Ardından, liderlik tablosunu oluşturmak için, farklı kullanıcının doğru tahmin sayısını saklayabilecekleri bir dizi kullanabilirsiniz.
+1. **Random Number Generation**:
+   - Generate a random number between 1 and 100 using **Math.random()**.
+   
+2. **User Input**:
+   - Use a **Scanner** to get user input for their guess.
+   
+3. **Feedback**:
+   - If the guess is too low, print "Too low, try again".
+   - If the guess is too high, print "Too high, try again".
+   - When the guess is correct, display the number of guesses taken to find the correct number.
 
-***Bonus : Uygulamayı, birden fazla kullanıcının aynı anda oynayabileceği bir çoklu oyuncu sürümüne dönüştürün.***
+4. **Leaderboard**:
+   - Track the number of attempts made by each user.
+   - Maintain a leaderboard to show the best scores of multiple users.
 
+5. **Bonus**:
+   - Modify the application for multiplayer functionality where multiple users can play simultaneously and their scores are tracked.
 
+### Design
 
-## 2. 
+- **Counter**: Use a counter to track the number of guesses made by the user.
+- **Leaderboard**: Store the number of correct guesses for different users in an array or list to display the leaderboard.
+- **Multiplayer**: Implement user input for multiple players and store the results of their guesses.
 
--  Kullanıcılardan bir kelime girmelerini isteyecek ve kelimenin ters çevrilmiş halini gösterecek bir uygulama yapınız. Ayrıca, kelimenin bir palindrom olup olmadığını kontrol edecektir. Örneğin, "kayak" kelimesi bir palindromdur.
+---
 
-Bu ödevi gerçekleştirmek için, öncelikle kullanıcının girdiği kelimeyi almanız gerekecek. Bunun için, Scanner sınıfını kullanabilirsiniz. Daha sonra, kelimeyi ters çevirmek için bir döngü yazmanız gerekecek. Ters çevrilmiş kelimeyi saklamak için bir String değişkeni kullanabilirsiniz.
+## 2. Palindrome Checker and Reverse Word Application
 
-12.03.2023 23:00'a kadar süreniz vardır.
+### Problem Description
+
+Create an application that asks the user for a word, reverses it, and checks if the word is a palindrome (i.e., it reads the same forwards and backwards).
+
+### Requirements
+
+1. **User Input**:
+   - Prompt the user to enter a word using the **Scanner** class.
+
+2. **Reversing the Word**:
+   - Reverse the word using a loop or built-in string manipulation methods.
+
+3. **Palindrome Check**:
+   - Check if the word is the same forwards and backwards.
+   - Print whether the word is a palindrome.
+
+4. **Example**:
+   - For the input "kayak", the program should output "The word is a palindrome."
+   - For the input "hello", the program should output "The word is not a palindrome."
+
+### Design
+
+- **Reversing**: Use a loop to reverse the string or use built-in string methods.
+- **Palindrome Check**: Compare the original word with the reversed word to check if they are the same.
+
+---
+
+## Prerequisites
+
+- **Java 17 or later**
+- An IDE like IntelliJ IDEA or Eclipse
+
+---
